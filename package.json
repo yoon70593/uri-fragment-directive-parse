@@ -1,0 +1,17 @@
+{
+  "name": "uri-fragment-directive-parse",
+  "version": "0.1.0",
+  "description": "Parses and normalizes text fragment directives (e.g., #:~:text=) for scroll-to-text per the W3C Fragment Directive specification.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
