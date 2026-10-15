@@ -62,3 +62,10 @@ return type for no real gain.
 - `parseFragmentDirective(directive: string): { start: string, end: string | null } | null`
 - `normalizeTextDirective(parts: { start: string, end?: string | null }): string | null`
 - `buildFragmentDirective(parts: { start: string, end?: string | null }, elementFragment?: string): string | null`
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
